@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
-import './AllTools.css'
+import './compCss/AllTools.css'
+
 
 
 

@@ -13,6 +13,6 @@ app.use(express.json())
 app.post(`/api/toolsList`, ctrl.addToBox)
 app.get(`/api/toolsList`, ctrl.getAll)
 app.put(`/api/toolsList/:id`, ctrl.rename)
-app.delete(`/api/toolsList/:id`, ctrl.delete)
+app.delete(`/api/toolsList/:id`, ctrl.yeet)
 
-app.listen(SERVER_PORT, () => console.log(`${SERVER_PORT} bottles of [ R E D A C T E D ] on the wall!`))
+app.listen(SERVER_PORT, () => console.log(`${SERVER_PORT} [ R E D A C T E D ] marching on Rome.`))
