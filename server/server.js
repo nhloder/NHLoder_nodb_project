@@ -10,9 +10,9 @@ app.use(express.json())
 
 //*** ENDPOINTS ***//
 
-// app.post(``, ctrl.)
+app.post(`/api/toolsList`, ctrl.addToBox)
 app.get(`/api/toolsList`, ctrl.getAll)
-// app.put(``, ctrl.)
-// app.delete(``, ctrl.delete)
+app.put(`/api/toolsList/:id`, ctrl.rename)
+app.delete(`/api/toolsList/:id`, ctrl.delete)
 
 app.listen(SERVER_PORT, () => console.log(`${SERVER_PORT} bottles of [ R E D A C T E D ] on the wall!`))

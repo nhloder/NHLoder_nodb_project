@@ -6,6 +6,7 @@ import './AllTools.css'
 
 
 
+
 export default class AllTools extends Component {
     constructor() {
         super();
@@ -31,41 +32,46 @@ export default class AllTools extends Component {
                     // imgUrl: res.data.imgUrl,
                     // powerTool: res.data.powerTool,
                 })
-                // toast.success(`got all tools`)
+                toast.success(`got all tools`)
                 
             })
-            // .catch(err => {
-            //     toast.error(`uh oh i did a bad`)
-            // })
+            .catch(err => {
+                toast.error(`uh oh i did a bad`)
+            })
     }
 
-    // doThing =() => {
-    //     this.componentDidMount()
+    
+    // power=(list) => {
+    //     for(let i = 0; i <= this.state.list.length; i++){
+    //     if (this.state.list[i].powerTool === true){
+    //         return 'Power Tool'}
+            
+    //         if(this.state.list[i].powerTool === false){
+    //             return 'Analog tool'}}
     // }
-
     render() {
+
         const allTools = this.state.list.map((tool) => {
             return (
                 <>
                 <li className="id">
-                        id: {tool.id}</li>
+                    id: {tool.id}</li>
                     <li>{tool.name}</li>
                     <img src={tool.imgUrl} alt='oops'></img>
-                    <li>{tool.powerTool}</li>
-                    </>
+                    <li>type: {tool.powerTool}</li>
+                    <hr/>
+                </>
             )
         })
         
-        const { id, name,imgUrl, powerTool, list } = this.state
 
         return (
             <div>
                 {/* <ToastContainer /> */}
                 <div className="box">
+                    <h1>All Tools</h1>
                 <ul>
-                    
                     {allTools}
-                    
                 </ul>
                 </div>
             </div>
