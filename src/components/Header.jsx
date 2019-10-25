@@ -21,7 +21,8 @@ class Header extends Component {
                     <br/>
                     First let's take a look at what tools you DO have and see which ones you want to take with you. Then see if you can find any more that you'd like to have and feel free to add them to the list.
                     <br/> 
-                    Also if you'd like to nickname your tools go right ahead! Otherwise, if you feel as if you don't need a tool anymore go ahead and just fuckin' YEET it out the nearest window!
+                    Also if you'd like to nickname your tools go right ahead!
+                    {/* Otherwise, if you feel as if you don't need a tool anymore go ahead and just fuckin' YEET it out the nearest window! */}
                 </article>
                 <hr/>
             </div>

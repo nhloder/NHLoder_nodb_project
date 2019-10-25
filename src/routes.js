@@ -4,6 +4,6 @@ import {Switch, Route} from 'react-router-dom'
 
 export default (
     <Switch>
-        <Route path = '/alltools' component= {AllTools}/>
+        <Route path = '/AllTools' component= {AllTools}/>
     </Switch>
 )

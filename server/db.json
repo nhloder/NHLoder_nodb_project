@@ -1,164 +1,142 @@
-{
-    "toolsList" : [
+
+    {
+"toolsList": [
     {
         "id":"1",
         "name":"4-in-1 Screwdriver",
         "imgUrl":"https://images-na.ssl-images-amazon.com/images/I/51mi-%2BptQ8L._SX466_.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":2,
         "name":"Framing Hammer",
         "imgUrl":"https://images-na.ssl-images-amazon.com/images/I/31Ul0GjZ1NL._SX466_.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":3,
         "name":"Finish Hammer",
         "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzzYDQfuAGAxFwa7yPDNj9_PPu3XhbS_P_O3dk2NIq4u2l--Cf&s",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":4,
         "name":"Nailgun",
         "imgUrl":"https://images.homedepot-static.com/productImages/0acbffd9-8d95-4398-af8b-29b5cf59e4af/svn/milwaukee-framing-nailers-7200-20-64_1000.jpg",
-        "powerTool": true,
-        "canUseItToKillAMan":true
+        "powerTool": true
     },
     {
         "id":5,
         "name":"Finish Nail Gun",
         "imgUrl":"https://images.homedepot-static.com/productImages/69daae10-a9a7-471c-9f16-0b30192ac04b/svn/porter-cable-brad-nailers-bn200c-d4_1000.jpg",
-        "powerTool": true,
-        "canUseItToKillAMan":true
+        "powerTool": true
     },
     {
         "id":6,
         "name":"SkillSaw",
         "imgUrl":"https://images.orgill.com/large/8889016.JPG",
-        "powerTool": true,
-        "canUseItToKillAMan":true
+        "powerTool": true
     },
     {
         "id":7,
         "name":"Wire Strippers",
         "imgUrl":"https://images-na.ssl-images-amazon.com/images/I/51AGKrH%2B1pL._SX466_.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":8,
         "name":"Alternative Lifestyle Cutters",
         "imgUrl":"https://images.homedepot-static.com/productImages/2a11b150-9431-4448-bd40-2c74d9580ae6/svn/channellock-all-trades-cutting-pliers-337-64_1000.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":9,
         "name":"Outlet Tester",
         "imgUrl":"https://images.homedepot-static.com/productImages/38f8bcc1-c1b9-46d0-b4fa-6bfd15069707/svn/commercial-electric-specialty-meters-ms112h-64_1000.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":10,
         "name":"Lineman's Pliers",
         "imgUrl":"https://images.homedepot-static.com/productImages/7027b5b8-b448-419c-9add-f35f8a73d9ad/svn/channellock-all-trades-lineman-s-pliers-369-64_1000.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":11,
         "name":"Power Drill",
         "imgUrl":"https://images-na.ssl-images-amazon.com/images/I/61dPKONTxQL._SX679_.jpg",
-        "powerTool": true,
-        "canUseItToKillAMan":true
+        "powerTool": true
     },
     {
         "id":12,
         "name":"Impact Driver",
         "imgUrl":"https://www.dewalt.com/NA/product/images/3000x3000x96/DCF809B/DCF809B_1.jpg",
-        "powerTool": true,
-        "canUseItToKillAMan":true
+        "powerTool": true
     },
     {
         "id":13,
         "name":"Needle Nose Pliers",
         "imgUrl":"https://images.homedepot-static.com/productImages/4413f007-b9b9-461a-b9d7-84bc4c158d2d/svn/channellock-all-trades-needle-nose-pliers-317z-64_1000.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":14,
         "name":"Chanel-Locks",
         "imgUrl":"https://images-na.ssl-images-amazon.com/images/I/41VgZI5zLuL.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":15,
         "name":"Electrical Tape",
         "imgUrl":"https://images.homedepot-static.com/productImages/25d9ad2a-50b2-4a07-84ce-6cc624a6958b/svn/power-gear-electrical-tape-51994-64_1000.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":16,
         "name":"Respirator",
         "imgUrl":"https://images-na.ssl-images-amazon.com/images/I/61v8COzRvbL.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":17,
         "name":"Gloves",
         "imgUrl":"https://smhttp-ssl-49898.nexcesscdn.net/media/catalog/product/cache/1/image/1200x1200/4105104eb37814677cb2026494ac36bd/m/w/mw13_mg4x_75_h.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":18,
         "name":"Voltage Tester",
         "imgUrl":"https://images.homedepot-static.com/productImages/bf875895-ed43-454f-9415-039d42f2f732/svn/klein-tools-voltage-tester-et60-64_1000.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":19,
         "name":"Kneepads",
         "imgUrl":"https://images-na.ssl-images-amazon.com/images/I/819-XteDUdL._SY450_.jpg",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":20,
         "name":"Paintbrush",
         "imgUrl":"https://i.ebayimg.com/images/g/ScMAAOSw34FbugOY/s-l300.png",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     },
     {
         "id":21,
         "name":"Just A Straight Up Glock 19",
         "imgUrl":"https://www.sportsmansoutdoorsuperstore.com/prodimages/15540-DEFAULT-l.jpg",
-        "powerTool":false,
-        "canUseItToKillAMan":true
+        "powerTool":false
     },
     {
         "id":22,
         "name":"MGS3 Snake Eater Main Theme.mp3",
         "imgUrl":"https://e.snmc.io/i/300/w/9f9c09d2cc49094a7240835d1c9e788d/2445998",
-        "powerTool": true,
-        "canUseItToKillAMan":true
+        "powerTool": true
     },
     {
         "id":23,
         "name":"Chaos Zweihander",
         "imgUrl":"https://darksouls3.wiki.fextralife.com/file/Dark-Souls-3/zweihander.png",
-        "powerTool": false,
-        "canUseItToKillAMan":true
+        "powerTool": false
     }
 ]}

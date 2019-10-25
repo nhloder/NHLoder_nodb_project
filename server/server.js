@@ -11,7 +11,7 @@ app.use(express.json())
 //*** ENDPOINTS ***//
 
 // app.post(``, ctrl.)
-app.get(`/ToolsList.json`, ctrl.getAll)
+app.get(`/api/toolsList`, ctrl.getAll)
 // app.put(``, ctrl.)
 // app.delete(``, ctrl.delete)
 
