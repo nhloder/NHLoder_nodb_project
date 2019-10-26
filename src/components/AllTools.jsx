@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import './compCss/AllTools.css'
-
-
-
-
+import {withRouter} from 'react-router-dom'
 
 
 export default class AllTools extends Component {
@@ -25,7 +22,7 @@ export default class AllTools extends Component {
     componentDidMount = () => {
         axios.get(`/api/toolsList`)
             .then(res => {
-                console.log(res.data)
+                // console.log(res.data)
                 this.setState({
                     list: res.data.toolsList
                     // id: res.data.id,
@@ -41,7 +38,16 @@ export default class AllTools extends Component {
             })
     }
 
-    
+    addTool(tool) {
+        
+        axios.post('/api/myToolBox', tool)
+            // .then(res => {
+            //     this.props.history.push('/')
+            // })
+            
+        
+        
+    }
     // power=(list) => {
     //     for(let i = 0; i <= this.state.list.length; i++){
     //     if (this.state.list[i].powerTool === true){
@@ -57,10 +63,12 @@ export default class AllTools extends Component {
                 <>
                 <li className="id">
                     id: {tool.id}</li>
-                    <li>{tool.name}</li>
+                    <li>name:{tool.name}</li>
                     <img src={tool.imgUrl} alt='oops'></img>
                     <li>type: {tool.powerTool}</li>
-                    <hr/>
+                    <button onClick ={() => this.addTool(tool)}>add tool</button>
+                <hr/>
+                    
                 </>
             )
         })
@@ -74,6 +82,7 @@ export default class AllTools extends Component {
                 <ul>
                     {allTools}
                 </ul>
+                
                 </div>
             </div>
         )

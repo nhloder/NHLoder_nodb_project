@@ -10,9 +10,10 @@ app.use(express.json())
 
 //*** ENDPOINTS ***//
 
-app.post(`/api/toolsList`, ctrl.addToBox)
+app.post(`/api/myToolBox`, ctrl.addToBox)
+app.get(`/api/myToolBox`,ctrl.getBox)
 app.get(`/api/toolsList`, ctrl.getAll)
-app.put(`/api/toolsList/:id`, ctrl.rename)
-app.delete(`/api/toolsList/:id`, ctrl.yeet)
+app.put(`/api/myToolBox/:id`, ctrl.rename)
+app.delete(`/api/myToolBox/:id`, ctrl.yeet)
 
 app.listen(SERVER_PORT, () => console.log(`${SERVER_PORT} [ R E D A C T E D ] marching on Rome.`))

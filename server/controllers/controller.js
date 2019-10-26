@@ -1,13 +1,17 @@
 let id = 0
+let boxId =0
 const toolsList = require('../db.json')
 // const newToolsList = Object.assign({}, toolsList)
 const toolBox = []
-
+const myToolBox=require('../myToolBox.json')
 module.exports ={
     addToBox: (req,res) => {
-        const addedTool = {...req.body, id}
+        const addedTool = {...req.body, boxId}
         toolBox.push(addedTool)
-        id++
+        boxId++
+        res.status(200).send(toolBox)
+    },
+    getBox: (req,res) => {
         res.status(200).send(toolBox)
     },
 
