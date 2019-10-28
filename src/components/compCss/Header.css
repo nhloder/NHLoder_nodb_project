@@ -1,0 +1,12 @@
+header{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: stretch;
+    position: sticky;
+    z-index: 1;
+    top:0px;
+    background:#663300;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
+import './compCss/Footer.css'
 // import ToolBox from './ToolBox';
 
 class Footer extends Component {

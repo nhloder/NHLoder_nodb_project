@@ -6,7 +6,7 @@ class ToolBox extends Component {
     constructor() {
         super();
         this.state = {
-            baux: []
+            box: []
         }
     }
     componentDidMount() {
@@ -15,7 +15,7 @@ class ToolBox extends Component {
             .then(res => {
                 console.log('hi')
                 this.setState({
-                    baux: res.data,
+                    box: res.data,
                 })
             })
     }
@@ -25,7 +25,7 @@ class ToolBox extends Component {
             .put(`/api/myToolBox/${id}`, body)
             .then(res => {
                 this.setState({
-                    baux: res.data
+                    box: res.data
                 })
             }
             )
@@ -37,16 +37,17 @@ class ToolBox extends Component {
         axios.delete(`/api/myToolBox/${id}`)
             .then(res => {
                 this.setState({
-                    baux: res.data
+                    box: res.data
                 })
             })
     }
 
 
     render() {
-        const toolsBox = this.state.baux.map((tool) => (
+        const toolsBox = this.state.box.map((tool) => (
             <EditTool key = {tool.id} tool = {tool}
             update = {this.updateName}
+            delete = {this.deleteToolBoxItem}
             />
             ))
             return (
@@ -74,7 +75,7 @@ export default ToolBox;
 //     <li>type: {tool.powerTool}</li>
 
 //     <div className='buttons'>
-//         {this.updateName(this.state.baux.name)}
+//         {this.updateName(this.state.box.name)}
 //         <br />
 //         <button onClick={(id) => this.deleteToolBoxItem(tool.id)}>YEET Out The Nearest Window</button>
 //     </div>

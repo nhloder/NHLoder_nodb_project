@@ -14,6 +14,6 @@ app.post(`/api/myToolBox`, ctrl.addToBox)
 app.get(`/api/myToolBox`,ctrl.getBox)
 app.get(`/api/toolsList`, ctrl.getAll)
 app.put(`/api/myToolBox/:id`, ctrl.rename)
-app.delete(`/api/myToolBox/:id`, ctrl.yeet)
+app.delete(`/api/myToolBox/:id`, ctrl.delete)
 
 app.listen(SERVER_PORT, () => console.log(`${SERVER_PORT} [ R E D A C T E D ] marching on Rome.`))

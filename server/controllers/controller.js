@@ -27,12 +27,12 @@ module.exports ={
         toolBox[index].nickName = nickName
         res.status(200).send(toolBox)
     },
-    yeet: (req,res) => {
+    delete: (req,res) => {
         const {id} = req.params
         // console.log(req.params)
         // console.log(toolBox)
         const index = toolBox.findIndex(el => +el.id === +id)
-        // console.log(index)
+        console.log(index)
         toolBox.splice(index,1)
         res.status(200).send(toolBox)
     }

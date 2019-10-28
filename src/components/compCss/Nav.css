@@ -1,0 +1,18 @@
+nav{
+    display: flex;
+}
+
+.navitems{
+    font-family: serif;
+    flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+li{
+    list-style: none;
+    margin: 0 1rem;
+    cursor: grab;
+}
+Link{
+    color:white
+}
