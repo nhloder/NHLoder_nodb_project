@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
 import routes from '../routes';
+import Nav from './Nav'
 
 
 class Header extends Component {
@@ -10,22 +11,7 @@ class Header extends Component {
                     
                 <header>
                     <h1>Whats In My Tool Box?</h1>
-                    <nav>
-                        <ul>
-                            <li>
-                                <Link to ='/'>Tool Box</Link>
-                            </li>
-                            <li>
-                                <Link to = '/AllTools'>All Tools</Link>
-                            </li>
-                            <li>
-                                <Link to = '/PowerTools'>PowerTools</Link>
-                            </li>
-                            <li>
-                                <Link to = '/AnalogTools'>Analog Tools</Link>
-                            </li>
-                        </ul>
-                    </nav>
+                    <Nav />
                 </header>
                 <hr/>
                 <article>

@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
+import Nav from './Nav';
+// import ToolBox from './ToolBox';
 
 class Footer extends Component {
     render() {
         return (
             <div>
+                <hr/>
                 <footer>
-                <h1>Tool Box</h1>
-                    <nav>
-                        <ul>
-                            <li>Tool Box</li>
-                            <li>All Tools</li>
-                            <li>Power Tools</li>
-                            <li>Analog Tools</li>
-                        </ul>
-                    </nav>
+                <h1>What's in my ToolBox</h1>
+                    <Nav />
                 </footer>
             </div>
         );

@@ -1,14 +1,14 @@
 let id = 0
-let boxId =0
+
 const toolsList = require('../db.json')
 // const newToolsList = Object.assign({}, toolsList)
 const toolBox = []
-const myToolBox=require('../myToolBox.json')
+// const myToolBox = require('../myToolBox.json')
 module.exports ={
     addToBox: (req,res) => {
-        const addedTool = {...req.body, boxId}
+        const addedTool = {...req.body, id}
         toolBox.push(addedTool)
-        boxId++
+        id++
         res.status(200).send(toolBox)
     },
     getBox: (req,res) => {
@@ -20,14 +20,19 @@ module.exports ={
     },
     rename: (req,res) => {
         const{id} = req.params
-        const {name} = req.body
-        const index = toolBox.findIndex(el => el.id === +id)
-        toolBox[index].name = name
+        console.log(id)
+        const {nickName} = req.body
+        const index = toolBox.findIndex(el => +el.id === +id)
+        console.log(index)
+        toolBox[index].nickName = nickName
         res.status(200).send(toolBox)
     },
     yeet: (req,res) => {
-        const{id} =req.params
-        const index = toolBox.findIndex(el => el.id ===+id)
+        const {id} = req.params
+        // console.log(req.params)
+        // console.log(toolBox)
+        const index = toolBox.findIndex(el => +el.id === +id)
+        // console.log(index)
         toolBox.splice(index,1)
         res.status(200).send(toolBox)
     }

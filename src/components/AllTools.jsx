@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import './compCss/AllTools.css'
-import {withRouter} from 'react-router-dom'
+// import {withRouter} from 'react-router-dom'
 
 
 export default class AllTools extends Component {
@@ -41,9 +41,9 @@ export default class AllTools extends Component {
     addTool(tool) {
         
         axios.post('/api/myToolBox', tool)
-            // .then(res => {
-            //     this.props.history.push('/')
-            // })
+            .then(res => {
+                this.props.history.push('/')
+            })
             
         
         
@@ -76,7 +76,7 @@ export default class AllTools extends Component {
 
         return (
             <div>
-                {/* <ToastContainer /> */}
+                <ToastContainer />
                 <div className="box">
                     <h1>All Tools</h1>
                 <ul>
